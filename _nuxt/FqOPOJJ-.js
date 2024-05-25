@@ -1,0 +1,1 @@
+import{_ as e,c as t,t as n,o as c}from"./sHDbaKsr.js";const o={},s={class:"flex justify-content-center align-items-center w-full h-full"};function r(a,l){return c(),t("div",s,n("Soon..."))}const _=e(o,[["render",r]]);export{_ as default};
