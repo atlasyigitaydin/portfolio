@@ -1,0 +1,20 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+intro:
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name
+not-found: Not found
+
+
+field_invalid: Invalid field
+field_required: This field is required
+field_too_big: Must be at most {0} characters
+field_too_short: Must be at least {0} characters
