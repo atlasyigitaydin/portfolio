@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import DynamicDialog from 'primevue/dynamicdialog'
-import Toast from 'primevue/Toast'
-import ConfirmDialog from 'primevue/ConfirmDialog'
+// import DynamicDialog from 'primevue/dynamicdialog'
+// import Toast from 'primevue/Toast'
+// import ConfirmDialog from 'primevue/ConfirmDialog'
 
 useHead({
   title: 'Temp',
@@ -28,7 +28,7 @@ useHead({
 </script>
 
 <template>
-  <Toast />
+  <!-- <Toast />
   <ConfirmDialog />
   <DynamicDialog />
   <header>
@@ -36,8 +36,9 @@ useHead({
   </header>
   <routerSide>
     <RouterView />
-  </routerSide>
+  </routerSide> -->
   <!-- <footer>
     <TheFooter />
   </footer> -->
+    <RouterView />
 </template>
