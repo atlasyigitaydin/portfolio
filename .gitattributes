@@ -1,0 +1,3 @@
+*.css linguist-vendored
+*.ts linguist-vendored
+*.vue linguist-detectable
