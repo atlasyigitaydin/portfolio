@@ -1,1 +1,0 @@
-import{_ as c,o,c as n}from"./app-pki7mLLI.js";import{b as e}from"./route-block-B_A1xBdJ.js";const t={},s={class:"w-full flex justify-content-center"};function r(f,_){return o(),n("div",s," PROJECTS PAGE ")}typeof e=="function"&&e(t);const l=c(t,[["render",r]]);export{l as default};
