@@ -1,6 +1,9 @@
 {
-  "../../../../@vite-plugin-pages/route-block": [
-    "/assets/route-block-83d24a4e.js"
+  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/_...all_-43b6317a.js"
+  ],
+  "src/views/pages/[...all].vue": [
+    "/assets/_...all_-43b6317a.js"
   ],
   "src/views/pages/home/index.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/index-1b2ebba2.js"
@@ -8,11 +11,8 @@
   "src/views/pages/home/index.vue": [
     "/assets/index-1b2ebba2.js"
   ],
-  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/_...all_-43b6317a.js"
-  ],
-  "src/views/pages/[...all].vue": [
-    "/assets/_...all_-43b6317a.js"
+  "../../../../@vite-plugin-pages/route-block": [
+    "/assets/route-block-83d24a4e.js"
   ],
   "src/views/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/404-5338c279.js"
