@@ -91,10 +91,12 @@ footer {
 }
 routerSide {
     display: flex;
-    height: calc(100% - 60px);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     overflow: auto;
 }
-// if you are not using the footer, please replace 120px with 60px in routerSide
+
 .logo {
     padding-left: 20px;
     display: flex;

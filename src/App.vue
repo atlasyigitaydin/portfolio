@@ -28,17 +28,11 @@ useHead({
 </script>
 
 <template>
-  <!-- <Toast />
+  <Background class="z-1" />
+  <Toast />
   <ConfirmDialog />
   <DynamicDialog />
-  <header>
-    <TheHeader />
-  </header>
-  <routerSide>
+  <RouterSide>
     <RouterView />
-  </routerSide> -->
-  <!-- <footer>
-    <TheFooter />
-  </footer> -->
-    <RouterView />
+  </RouterSide>
 </template>

@@ -1,11 +1,9 @@
 <script setup lang="ts">
-
+import Background from './widgets/backgound.vue'
 </script>
 
 <template>
-  <div class="flex justify-content-center align-items-center w-full h-full">
-    {{ "Soon." }}
-  </div>
+  <Background />
 </template>
 
 <route lang="yaml">

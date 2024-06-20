@@ -7,6 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Background: typeof import('./../views/components/Background.vue')['default']
+    IPrimeUser: typeof import('~icons/prime/user')['default']
+    MegaMenu: typeof import('primevue/megamenu')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./../views/components/TheFooter.vue')['default']
