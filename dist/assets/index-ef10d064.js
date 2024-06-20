@@ -1,1 +1,0 @@
-import{_ as o,o as n,c,t as s}from"./app-86fe68ae.js";import{b as t}from"./route-block-83d24a4e.js";const e={},r={class:"flex justify-content-center align-items-center w-full h-full"};function f(i,a){return n(),c("div",r,s("Soon."),1)}typeof t=="function"&&t(e);const m=o(e,[["render",f]]);export{m as default};
