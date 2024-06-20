@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import Background from './widgets/backgound.vue'
+import CV from './widgets/downloadCv.vue'
 </script>
 
 <template>
-  <Background />
+  <div class="z-5">
+    <CV />
+  </div>
+  <Background class="z-1" />
 </template>
 
 <route lang="yaml">

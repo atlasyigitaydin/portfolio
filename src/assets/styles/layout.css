@@ -90,9 +90,6 @@ footer {
     height: 60px;
 }
 routerSide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     overflow: auto;
 }

@@ -34,7 +34,7 @@ const boxes = computed(() => {
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1 z-1">
+  <div class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1">
     <div
       v-for="(box, index) in boxes"
       :key="box"
