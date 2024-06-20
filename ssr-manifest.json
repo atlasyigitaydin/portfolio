@@ -1,9 +1,6 @@
 {
-  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/_...all_-43b6317a.js"
-  ],
-  "src/views/pages/[...all].vue": [
-    "/assets/_...all_-43b6317a.js"
+  "../../../../@vite-plugin-pages/route-block": [
+    "/assets/route-block-83d24a4e.js"
   ],
   "src/views/pages/home/index.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/index-1b2ebba2.js"
@@ -11,14 +8,17 @@
   "src/views/pages/home/index.vue": [
     "/assets/index-1b2ebba2.js"
   ],
-  "../../../../@vite-plugin-pages/route-block": [
-    "/assets/route-block-83d24a4e.js"
-  ],
   "src/views/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/404-5338c279.js"
   ],
   "src/views/layouts/404.vue": [
     "/assets/404-5338c279.js"
+  ],
+  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/_...all_-43b6317a.js"
+  ],
+  "src/views/pages/[...all].vue": [
+    "/assets/_...all_-43b6317a.js"
   ],
   "node_modules/.pnpm/primevue@3.52.0_vue@3.2.45/node_modules/primevue/badge/style/badgestyle.esm.js": [
     "/assets/downloadCv-21c4a9a6.js",
