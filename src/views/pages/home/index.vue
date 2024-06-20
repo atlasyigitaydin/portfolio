@@ -4,7 +4,7 @@
 
 <template>
   <div class="flex justify-content-center align-items-center w-full h-full">
-    {{ "Soon..." }}
+    {{ "Soon." }}
   </div>
 </template>
 
