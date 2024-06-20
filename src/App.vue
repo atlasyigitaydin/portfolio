@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Background from './views/layouts/backgound.vue'
 // import DynamicDialog from 'primevue/dynamicdialog'
 // import Toast from 'primevue/Toast'
 // import ConfirmDialog from 'primevue/ConfirmDialog'
@@ -28,7 +29,7 @@ useHead({
 </script>
 
 <template>
-  <Background class="z-1" />
+  <Background />
   <Toast />
   <ConfirmDialog />
   <DynamicDialog />
