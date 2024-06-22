@@ -5,6 +5,14 @@ import LinkedinWhite from '../../assets/icons/linkedin_white.png'
 import LinkedinDark from '../../assets/icons/linkedin_dark.jpg'
 import InstagramWhite from '../../assets/icons/instagram_white.png'
 import InstagramDark from '../../assets/icons/instagram_dark.png'
+
+const goTo = (url: string) => {
+  window.open(url, '_blank')
+}
+const router = useRouter()
+const isHomePage = computed(() => {
+  return router.currentRoute.value.name === 'home'
+})
 </script>
 
 <template>
@@ -12,17 +20,35 @@ import InstagramDark from '../../assets/icons/instagram_dark.png'
     <Divider
       :pt="{
         content: {
-          class: 'border-round shadow-8',
+          class: isHomePage ? 'border-round shadow-8' : 'bg-transparent',
         },
       }"
       align="left"
     >
-      <div class="flex gap-2">
-        <Image image-style="max-width: 25px;" class="p-1 flex justify-content-center align-items-center" :src="isDark ? GitWhite : GitDark" />
+      <div v-if="isHomePage" class="flex gap-2 px-2 w-13rem justify-content-center">
+        <Image
+          image-style="max-width: 25px;"
+          class="p-1 flex justify-content-center align-items-center"
+          :src="isDark ? GitWhite : GitDark"
+          @click="goTo('https://github.com/AtlsDev')"
+        />
         <Divider layout="vertical" class="my-1" />
-        <Image image-style="max-width: 25px;" class="p-1 flex justify-content-center align-items-center" :src="isDark ? InstagramWhite : InstagramDark" />
+        <Image
+          image-style="max-width: 25px;"
+          class="p-1 flex justify-content-center align-items-center"
+          :src="isDark ? InstagramWhite : InstagramDark"
+          @click="goTo('https://www.instagram.com/atlass.dev')"
+        />
         <Divider layout="vertical" class="my-1" />
-        <Image image-style="max-width: 25px;" class="p-1 flex justify-content-center align-items-center" :src="isDark ? LinkedinWhite : LinkedinDark" />
+        <Image
+          image-style="max-width: 25px;"
+          class="p-1 flex justify-content-center align-items-center"
+          :src="isDark ? LinkedinWhite : LinkedinDark"
+          @click="goTo('https://www.linkedin.com/in/yi%C4%9Fitayd%C4%B1n/')"
+        />
+      </div>
+      <div v-else class="flex gap-2 px-2 w-13rem justify-content-center">
+        <MyButton class="flex w-full my-1 align-items-center" label="Home Page" icon="pi pi-angle-left text-xl" @click="router.push({ name: 'home' })" />
       </div>
     </Divider>
     <Divider

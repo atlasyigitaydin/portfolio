@@ -10,12 +10,12 @@ const routes: RoutesButton[] = [
   {
     label: 'Ability',
     icon: 'pi pi-crown',
-    route: () => null,
+    route: () => router.push({ name: 'abilitys' }),
   },
   {
     label: 'About',
     icon: 'pi pi-user',
-    route: () => null,
+    route: () => router.push({ name: 'about' }),
   },
   {
     label: 'See My CV',

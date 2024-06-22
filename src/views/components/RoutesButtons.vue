@@ -6,12 +6,11 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    :class="!isDark ?? 'bg-green-400'"
-    style="width: 80%; background-color: var(--surface-0);"
+  <MyButton
+    :label="routes.label"
+    :icon="`${routes.icon} text-lg`"
+    style="width: 80%;"
     class="shadow-8 h-3rem border-round justify-content-between px-3 flex align-items-center"
-  >
-    <label class=""> {{ routes.label }} </label>
-    <div :class="routes.icon" />
-  </div>
+    @click="routes.route"
+  />
 </template>
