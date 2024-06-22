@@ -12,7 +12,7 @@ let intervalId: number | undefined
 onMounted(() => {
   intervalId = window.setInterval(() => {
     randomNumber.value = generateRandomNumber()
-  }, 500)
+  }, boxCount / 5)
 })
 
 onUnmounted(() => {
@@ -42,21 +42,21 @@ const boxes = computed(() => {
       :class="{
         'shadow-8':
           index === randomNumber
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000)
-          || index === Math.floor(Math.random() * 2000),
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount)
+          || index === Math.floor(Math.random() * boxCount),
       }"
     />
   </div>
