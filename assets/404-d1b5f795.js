@@ -1,0 +1,1 @@
+import{d as e,u as t,a as s,o,c as n,b as c}from"./app-3317bfd5.js";const a={class:"flex justify-content-center align-items-center h-full w-full z-5"},l=c("label",{class:"text-4xl"}," 404 ",-1),r=[l],p=e({__name:"404",setup(_){const u=t(),{t:i}=s();return(d,f)=>(o(),n("div",a,r))}});export{p as default};

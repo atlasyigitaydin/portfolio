@@ -1,48 +1,48 @@
 {
-  "src/views/pages/projects/index.vue": [
-    "/assets/index-230e9856.js"
-  ],
-  "src/views/pages/about/index.vue": [
-    "/assets/index-1c26ce0b.js"
-  ],
-  "src/views/pages/home/widgets/Welcome.vue": [
-    "/assets/Welcome-cd5c9da3.js"
-  ],
   "../../../../@vite-plugin-pages/route-block": [
     "/assets/route-block-83d24a4e.js"
   ],
-  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/_...all_-8e83c658.js"
-  ],
-  "src/views/pages/[...all].vue": [
-    "/assets/_...all_-8e83c658.js"
-  ],
   "src/views/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/404-6931edd1.js"
+    "/assets/404-d1b5f795.js"
   ],
   "src/views/layouts/404.vue": [
-    "/assets/404-6931edd1.js"
+    "/assets/404-d1b5f795.js"
+  ],
+  "src/views/pages/home/widgets/Welcome.vue": [
+    "/assets/Welcome-3fc15488.js"
+  ],
+  "src/views/pages/projects/index.vue": [
+    "/assets/index-6bd57023.js"
   ],
   "src/views/pages/abilitys/index.vue": [
-    "/assets/index-ed9ee1c2.js"
+    "/assets/index-a5b17129.js"
+  ],
+  "src/views/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/_...all_-8411be93.js"
+  ],
+  "src/views/pages/[...all].vue": [
+    "/assets/_...all_-8411be93.js"
   ],
   "src/views/pages/home/index.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/index-dc4cadc5.js"
+    "/assets/index-e7f676b8.js"
   ],
   "src/views/pages/home/index.vue": [
-    "/assets/index-dc4cadc5.js"
+    "/assets/index-e7f676b8.js"
   ],
   "src/views/components/RoutesButtons.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/Routers-e6d43564.js"
+    "/assets/Routers-549662e3.js"
   ],
   "src/views/components/RoutesButtons.vue": [
-    "/assets/Routers-e6d43564.js"
+    "/assets/Routers-549662e3.js"
   ],
   "src/views/pages/home/widgets/Routers.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/Routers-e6d43564.js"
+    "/assets/Routers-549662e3.js"
   ],
   "src/views/pages/home/widgets/Routers.vue": [
-    "/assets/Routers-e6d43564.js"
+    "/assets/Routers-549662e3.js"
+  ],
+  "src/views/pages/about/index.vue": [
+    "/assets/index-07fb6ba9.js"
   ],
   "\u0000vite/modulepreload-polyfill": [
     "/assets/git_white-5dd398a9.png",
