@@ -1,1 +1,0 @@
-import{d as e,o as t,e as n}from"./app-56288363.js";import r from"./downloadCv-21c4a9a6.js";import{b as o}from"./route-block-83d24a4e.js";const a=e({__name:"index",setup(c){return(s,f)=>(t(),n(r,{class:"z-5"}))}});typeof o=="function"&&o(a);export{a as default};
