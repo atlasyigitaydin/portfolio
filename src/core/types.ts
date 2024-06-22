@@ -18,3 +18,9 @@ export interface RVMeta extends RouteMeta {
   requiresIsActivityLogUser?: boolean
   requiresIsAppOrderUser?: boolean
 }
+
+export interface RoutesButton {
+  label: string
+  route: Function
+  icon: string
+}

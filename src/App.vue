@@ -33,7 +33,20 @@ useHead({
   <Toast />
   <ConfirmDialog />
   <DynamicDialog />
-  <RouterSide>
+  <RouterSide class="montserrat">
     <RouterView />
+    <MyLinks class="fixed bottom-0 left-0" />
+    <!-- <ChangeTheme class="fixed bottom-0 right-0" /> -->
   </RouterSide>
 </template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+}
+</style>

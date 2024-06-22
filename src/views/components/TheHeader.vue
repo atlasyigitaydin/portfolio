@@ -36,17 +36,14 @@ const items = ref([
 
 <template>
   <div class="w-full">
-    <Menubar class="w-full flex justify-content-between " :model="items">
+    <Menubar class="w-full flex justify-content-between shadow-8 border-round" :model="items">
       <template #start>
         <div
           class="flex cursor-pointer gap-1 text-xl"
           @click="router.push('/')"
         >
-          <div class="text-blue-400">
-            {{ "PROJECT" }}
-          </div>
-          <div>
-            {{ "NAME" }}
+          <div class="">
+            {{ "YİĞİT AYDIN" }}
           </div>
         </div>
       </template>

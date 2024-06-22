@@ -9,5 +9,5 @@ const downloadCV = () => {
 </script>
 
 <template>
-  <Button icon="pi pi-download" label="CV" @click="downloadCV" />
+  <MyButton icon="download" label="CV" @click="downloadCV" />
 </template>

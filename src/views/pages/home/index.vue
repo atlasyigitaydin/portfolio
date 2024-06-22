@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import CV from './widgets/downloadCv.vue'
+import Welcome from './widgets/Welcome.vue'
+import Routes from './widgets/Routers.vue'
 </script>
 
 <template>
-  <CV class="z-5" />
+  <div class="w-full h-full flex flex-column justify-content-around gap-2">
+    <Welcome class="h-full" />
+    <Routes class="h-full" />
+  </div>
 </template>
 
 <route lang="yaml">

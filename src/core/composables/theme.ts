@@ -1,7 +1,7 @@
 import '~/assets/styles/layout.css'
 
-import auraDarkAmber from '~/assets/styles/themes/aura/dark/amber/theme.css?url'
-import auraLightAmber from '~/assets/styles/themes/aura/light/amber/theme.css?url'
+// import auraDarkAmber from '~/assets/styles/themes/aura/dark/amber/theme.css?url'
+// import auraLightAmber from '~/assets/styles/themes/aura/light/amber/theme.css?url'
 
 // import auraDarkBlue from '~/assets/styles/themes/aura/dark/blue/theme.css?url'
 // import auraLightBlue from '~/assets/styles/themes/aura/light/blue/theme.css?url'
@@ -18,8 +18,8 @@ import auraLightAmber from '~/assets/styles/themes/aura/light/amber/theme.css?ur
 // import auraDarkLime from '~/assets/styles/themes/aura/dark/lime/theme.css?url'
 // import auraLightLime from '~/assets/styles/themes/aura/light/lime/theme.css?url'
 
-// import auraDarkNoir from '~/assets/styles/themes/aura/dark/noir/theme.css?url'
-// import auraLightNoir from '~/assets/styles/themes/aura/light/noir/theme.css?url'
+import auraDarkNoir from '~/assets/styles/themes/aura/dark/noir/theme.css?url'
+import auraLightNoir from '~/assets/styles/themes/aura/light/noir/theme.css?url'
 
 // import auraDarkPink from '~/assets/styles/themes/aura/dark/pink/theme.css?url'
 // import auraLightPink from '~/assets/styles/themes/aura/light/pink/theme.css?url'
@@ -78,6 +78,6 @@ export const themeLinks = reactive([
   {
     rel: 'stylesheet',
     type: 'text/css',
-    href: computed(() => isDark.value ? auraDarkAmber : auraLightAmber),
+    href: computed(() => isDark.value ? auraDarkNoir : auraLightNoir),
   },
 ])
