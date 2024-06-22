@@ -90,7 +90,7 @@ footer {
     height: 60px;
 }
 routerSide {
-    height: 100vh;
+    height: calc(100vh - 120px);
 }
 
 .logo {

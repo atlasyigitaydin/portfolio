@@ -16,7 +16,6 @@ declare module '@vue/runtime-core' {
     MyLinks: typeof import('./../views/components/MyLinks.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    RoutesButton: typeof import('./../views/components/RoutesButton.vue')['default']
     RoutesButtons: typeof import('./../views/components/RoutesButtons.vue')['default']
     TheFooter: typeof import('./../views/components/TheFooter.vue')['default']
     TheHeader: typeof import('./../views/components/TheHeader.vue')['default']
