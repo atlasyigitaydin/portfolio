@@ -34,9 +34,12 @@ useHead({
   <ConfirmDialog />
   <DynamicDialog />
   <RouterSide class="montserrat">
-    <RouterView />
+    <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition || 'fade'">
+        <component :is="Component" />
+      </transition>
+    </router-view>
     <MyLinks class="fixed bottom-0 left-0" />
-    <!-- <ChangeTheme class="fixed bottom-0 right-0" /> -->
   </RouterSide>
 </template>
 
@@ -48,5 +51,15 @@ useHead({
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: bold;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateX(-100%);
 }
 </style>

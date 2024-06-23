@@ -10,4 +10,4 @@ name: projects
 path: /projects
 meta:
   layout: default
-            </route>
+</route>

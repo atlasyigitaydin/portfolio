@@ -17,4 +17,4 @@ name: home
 path: /
 meta:
   layout: default
-        </route>
+</route>
