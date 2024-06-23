@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
     ChangeTheme: typeof import('./../views/components/ChangeTheme.vue')['default']
+    Dialog: typeof import('primevue/dialog')['default']
     Divider: typeof import('primevue/divider')['default']
     DownloadCv: typeof import('./../views/components/DownloadCv.vue')['default']
     Image: typeof import('primevue/image')['default']
@@ -17,6 +18,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     RoutesButtons: typeof import('./../views/components/RoutesButtons.vue')['default']
+    Skeleton: typeof import('primevue/skeleton')['default']
     TheFooter: typeof import('./../views/components/TheFooter.vue')['default']
     TheHeader: typeof import('./../views/components/TheHeader.vue')['default']
   }

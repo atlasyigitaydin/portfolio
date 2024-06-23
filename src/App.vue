@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import Toast from 'primevue/Toast'
 import Background from './views/layouts/backgound.vue'
 // import DynamicDialog from 'primevue/dynamicdialog'
-// import Toast from 'primevue/Toast'
 // import ConfirmDialog from 'primevue/ConfirmDialog'
 
 useHead({
-  title: 'Temp',
+  title: 'Yiğit Aydın',
   htmlAttrs: { class: appMode.value },
   meta: [
     {

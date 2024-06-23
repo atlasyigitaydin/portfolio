@@ -7,7 +7,7 @@ import InstagramWhite from '../../assets/icons/instagram_white.png'
 import InstagramDark from '../../assets/icons/instagram_dark.png'
 
 const goTo = (url: string) => {
-  window.open(url, '_blank')
+  window.open(url)
 }
 const router = useRouter()
 const isHomePage = computed(() => {

@@ -31,33 +31,25 @@ const generateBox = (count: number) => {
 const boxes = computed(() => {
   return generateBox(boxCount)
 })
+
+const getBoxClass = (index: number) => {
+  const randomMatches = Array.from({ length: 15 }, () => Math.floor(Math.random() * boxCount))
+  if (index === randomNumber.value || randomMatches.includes(index))
+    return isDark.value ? 'shadow-8 border-1 border-gray-600' : 'shadow-8'
+
+  return ''
+}
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1 justify-content-center align-items-center">
+  <div
+    class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1 justify-content-center align-items-center"
+  >
     <div
       v-for="(box, index) in boxes"
       :key="box"
       class="shadow-2 w-2rem h-2rem border-round-sm hover:shadow-8 shadow-animation"
-      :class="{
-        'shadow-8':
-          index === randomNumber
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount)
-          || index === Math.floor(Math.random() * boxCount),
-      }"
+      :class="getBoxClass(index)"
     />
   </div>
 </template>

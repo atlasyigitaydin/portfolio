@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import Welcome from './widgets/Welcome.vue'
+import Me from './widgets/Me.vue'
 import Routes from './widgets/Routers.vue'
+import Abilitys from './widgets/Abilitys.vue'
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-column justify-content-around gap-2">
-    <Welcome class="h-full" />
-    <Routes class="h-full" />
+  <div class="h-full flex flex-column gap-5">
+    <Me />
+    <Abilitys />
+    <Routes />
   </div>
 </template>
 
