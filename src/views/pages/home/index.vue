@@ -5,7 +5,7 @@ import Abilitys from './widgets/Abilitys.vue'
 </script>
 
 <template>
-  <div class="h-full flex flex-column gap-5">
+  <div class="flex flex-column gap-5 overflow-scroll">
     <Me />
     <Abilitys />
     <Routes />
