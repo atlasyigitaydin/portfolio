@@ -45,7 +45,7 @@ const getBoxClass = (index: number) => {
     <Transition v-for="(box, index) in boxes" :key="box" name="boxShadowAnimation">
       <div
         v-if="getBoxClass(index)"
-        class="w-2rem h-2rem border-round-sm boxShadow"
+        class="w-2rem h-2rem border-round-sm shadow-8"
       />
       <div v-else />
     </Transition>
