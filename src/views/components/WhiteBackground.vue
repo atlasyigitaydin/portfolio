@@ -33,9 +33,10 @@ const boxes = computed(() => {
 })
 
 const getBoxClass = (index: number) => {
-  const randomMatches = Array.from({ length: 7 }, () => Math.floor(Math.random() * boxCount))
+  const randomMatches = Array.from({ length: 12 }, () => Math.floor(Math.random() * boxCount))
   return (index === randomNumber.value || randomMatches.includes(index))
 }
+const defaultBoxClass = 'w-2rem h-2rem shadow-1'
 </script>
 
 <template>
@@ -45,14 +46,14 @@ const getBoxClass = (index: number) => {
     <Transition v-for="(box, index) in boxes" :key="box" name="boxShadowAnimation">
       <div
         v-if="getBoxClass(index)"
-        class="w-2rem h-2rem border-round-sm shadow-8"
+        :class="defaultBoxClass"
       />
-      <div v-else />
+      <div v-else :class="defaultBoxClass" />
     </Transition>
   </div>
 </template>
 
-<style scoped>
+<style>
 .boxShadow {
   box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.08), 0px 22px 30px 2px rgba(0, 0, 0, 0.15), 0px 8px 10px rgba(0, 0, 0, 0.15);
 }
@@ -64,6 +65,6 @@ const getBoxClass = (index: number) => {
 
 .boxShadowAnimation-enter-from,
 .boxShadowAnimation-leave-to {
-  transform: boxShadow;
+  opacity: 0;
 }
 </style>

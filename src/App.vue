@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Toast from 'primevue/Toast'
-import Background from './views/layouts/backgound.vue'
+import DarkBackground from './views/components/DarkBackground.vue'
+import WhiteBackground from './views/components/WhiteBackground.vue'
 // import DynamicDialog from 'primevue/dynamicdialog'
 // import ConfirmDialog from 'primevue/ConfirmDialog'
 
@@ -29,7 +30,8 @@ useHead({
 </script>
 
 <template>
-  <Background />
+  <DarkBackground v-if="isDark" />
+  <WhiteBackground v-if="!isDark" />
   <Toast />
   <ConfirmDialog />
   <DynamicDialog />

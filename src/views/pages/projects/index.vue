@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  .
+  PROJECTS
 </template>
 
 <route lang="yaml">

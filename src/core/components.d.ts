@@ -7,8 +7,11 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Background: typeof import('./../views/components/Background.vue')['default']
     Button: typeof import('primevue/button')['default']
     ChangeTheme: typeof import('./../views/components/ChangeTheme.vue')['default']
+    copy: typeof import('./../views/components/DarkBackground copy.vue')['default']
+    DarkBackground: typeof import('./../views/components/DarkBackground.vue')['default']
     Dialog: typeof import('primevue/dialog')['default']
     Divider: typeof import('primevue/divider')['default']
     DownloadCv: typeof import('./../views/components/DownloadCv.vue')['default']
@@ -21,5 +24,6 @@ declare module '@vue/runtime-core' {
     Skeleton: typeof import('primevue/skeleton')['default']
     TheFooter: typeof import('./../views/components/TheFooter.vue')['default']
     TheHeader: typeof import('./../views/components/TheHeader.vue')['default']
+    WhiteBackground: typeof import('./../views/components/WhiteBackground.vue')['default']
   }
 }
