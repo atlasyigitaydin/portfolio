@@ -1,70 +1,41 @@
 <script setup lang="ts">
-const boxCount = 2000
-
-const generateRandomNumber = () => {
-  return Math.floor(Math.random() * boxCount)
-}
-
-const randomNumber = ref(generateRandomNumber())
-
-let intervalId: number | undefined
-
 onMounted(() => {
-  intervalId = window.setInterval(() => {
-    randomNumber.value = generateRandomNumber()
-  }, boxCount)
+  const container = document.querySelector('.rain-container')
+  if (container) {
+    for (let i = 0; i < 10; i++) {
+      const raindrop = document.createElement('div')
+      raindrop.classList.add('rain-white', 'animate-down-white')
+      raindrop.style.left = `${Math.random() * 100}vw`
+      raindrop.style.animationDelay = `${Math.random() * 3}s`
+      container.appendChild(raindrop)
+    }
+  }
 })
-
-onUnmounted(() => {
-  if (intervalId !== undefined)
-    clearInterval(intervalId)
-})
-
-const generateBox = (count: number) => {
-  const Boxes = []
-  for (let i = 0; i < count; i++)
-    Boxes.push(i)
-
-  return Boxes
-}
-
-const boxes = computed(() => {
-  return generateBox(boxCount)
-})
-
-const getBoxClass = (index: number) => {
-  const randomMatches = Array.from({ length: 12 }, () => Math.floor(Math.random() * boxCount))
-  return (index === randomNumber.value || randomMatches.includes(index))
-}
-const defaultBoxClass = 'w-2rem h-2rem shadow-1'
 </script>
 
 <template>
-  <div
-    class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1 justify-content-center align-items-center"
-  >
-    <Transition v-for="(box, index) in boxes" :key="box" name="boxShadowAnimation">
-      <div
-        v-if="getBoxClass(index)"
-        :class="defaultBoxClass"
-      />
-      <div v-else :class="defaultBoxClass" />
-    </Transition>
-  </div>
+  <div class="fixed top-0 left-0 w-screen h-screen rain-container opacity-30 px-2" />
 </template>
 
 <style>
-.boxShadow {
-  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.08), 0px 22px 30px 2px rgba(0, 0, 0, 0.15), 0px 8px 10px rgba(0, 0, 0, 0.15);
+.rain-white {
+  width: 1px;
+  height: 150px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
+  position: fixed;
+  top: -300px;
 }
 
-.boxShadowAnimation-enter-active,
-.boxShadowAnimation-leave-active {
-  transition: all 0.6s ease;
+@keyframes move-down-white {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100vh;
+  }
 }
 
-.boxShadowAnimation-enter-from,
-.boxShadowAnimation-leave-to {
-  opacity: 0;
+.animate-down-white {
+  animation: move-down-white 3s linear infinite;
 }
 </style>
