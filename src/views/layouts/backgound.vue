@@ -12,7 +12,7 @@ let intervalId: number | undefined
 onMounted(() => {
   intervalId = window.setInterval(() => {
     randomNumber.value = generateRandomNumber()
-  }, boxCount / 5)
+  }, boxCount)
 })
 
 onUnmounted(() => {
@@ -33,11 +33,8 @@ const boxes = computed(() => {
 })
 
 const getBoxClass = (index: number) => {
-  const randomMatches = Array.from({ length: 15 }, () => Math.floor(Math.random() * boxCount))
-  if (index === randomNumber.value || randomMatches.includes(index))
-    return isDark.value ? 'shadow-8 border-1 border-gray-600' : 'shadow-8'
-
-  return ''
+  const randomMatches = Array.from({ length: 7 }, () => Math.floor(Math.random() * boxCount))
+  return (index === randomNumber.value || randomMatches.includes(index))
 }
 </script>
 
@@ -45,28 +42,28 @@ const getBoxClass = (index: number) => {
   <div
     class="fixed top-0 left-0 w-full h-full flex flex-wrap gap-1 overflow-hidden p-1 justify-content-center align-items-center"
   >
-    <div
-      v-for="(box, index) in boxes"
-      :key="box"
-      class="shadow-2 w-2rem h-2rem border-round-sm hover:shadow-8 shadow-animation"
-      :class="getBoxClass(index)"
-    />
+    <Transition v-for="(box, index) in boxes" :key="box" name="boxShadowAnimation">
+      <div
+        v-if="getBoxClass(index)"
+        class="w-2rem h-2rem border-round-sm boxShadow"
+      />
+      <div v-else />
+    </Transition>
   </div>
 </template>
 
 <style scoped>
-.shadow-animation {
-  animation: shadowAnimation 5s infinite;
-  box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2);
+.boxShadow {
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.08), 0px 22px 30px 2px rgba(0, 0, 0, 0.15), 0px 8px 10px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes shadowAnimation {
-  0% { box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2); }
-  50% { box-shadow: 0px 12px 50px 10px rgba(0, 0, 0, 0.2), 0px 30px 50px 5px rgba(0, 0, 0, 0.25), 0px 15px 20px rgba(0, 0, 0, 0.3); }
-  100% { box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2); }
+.boxShadowAnimation-enter-active,
+.boxShadowAnimation-leave-active {
+  transition: all 0.6s ease;
 }
 
-.hover\\:shadow-8:hover {
-  box-shadow: 0px 12px 50px 10px rgba(0, 0, 0, 0.2), 0px 30px 50px 5px rgba(0, 0, 0, 0.25), 0px 15px 20px rgba(0, 0, 0, 0.3);
+.boxShadowAnimation-enter-from,
+.boxShadowAnimation-leave-to {
+  transform: boxShadow;
 }
 </style>
