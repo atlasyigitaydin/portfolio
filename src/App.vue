@@ -37,7 +37,7 @@ useHead({
   <DynamicDialog />
   <RouterSide class="montserrat">
     <router-view v-slot="{ Component, route }">
-      <transition :name="route.meta.transition || 'fade'">
+      <transition :name="route.meta.transition || 'router-animation'" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -55,13 +55,13 @@ useHead({
   font-style: bold;
 }
 
-.fade-enter-active,
-.fade-leave-active {
+.router-animation-enter-active,
+.router-animation-leave-active {
   transition: all 0.5s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.router-animation-enter-from,
+.router-animation-leave-to {
   transform: translateX(-100%);
   opacity: 0;
 }
