@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     Divider: typeof import('primevue/divider')['default']
     DownloadCv: typeof import('./../views/components/DownloadCv.vue')['default']
     Image: typeof import('primevue/image')['default']
+    Make: typeof import('./../views/components/make.vue')['default']
     MyButton: typeof import('./../views/components/MyButton.vue')['default']
     MyLinks: typeof import('./../views/components/MyLinks.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

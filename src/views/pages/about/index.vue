@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  .
+  <make />
 </template>
 
 <route lang="yaml">

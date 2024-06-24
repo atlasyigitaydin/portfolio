@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  PROJECTS
+  <make />
 </template>
 
 <route lang="yaml">
