@@ -132,6 +132,7 @@ declare global {
   const unref: typeof import('vue')['unref']
   const unrefElement: typeof import('@vueuse/core')['unrefElement']
   const until: typeof import('@vueuse/core')['until']
+  const useAbilityStore: typeof import('../views/pages/abilitys/stores/abilitys')['useAbilityStore']
   const useActiveElement: typeof import('@vueuse/core')['useActiveElement']
   const useAdminStore: typeof import('./stores/admin')['useAdminStore']
   const useAppStore: typeof import('./stores/app')['useAppStore']
@@ -462,6 +463,7 @@ declare module 'vue' {
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly unrefElement: UnwrapRef<typeof import('@vueuse/core')['unrefElement']>
     readonly until: UnwrapRef<typeof import('@vueuse/core')['until']>
+    readonly useAbilityStore: UnwrapRef<typeof import('../views/pages/abilitys/stores/abilitys')['useAbilityStore']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
     readonly useAdminStore: UnwrapRef<typeof import('./stores/admin')['useAdminStore']>
     readonly useAppStore: UnwrapRef<typeof import('./stores/app')['useAppStore']>

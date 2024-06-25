@@ -24,3 +24,9 @@ export interface RoutesButton {
   route: Function
   icon: string
 }
+
+export interface Ability {
+  img: string
+  name: string
+  content: string
+}

@@ -7,13 +7,15 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AbilityGaleria: typeof import('./../views/components/AbilityGaleria.vue')['default']
     BackToHomePage: typeof import('./../views/components/BackToHomePage.vue')['default']
     Button: typeof import('primevue/button')['default']
     ChangeTheme: typeof import('./../views/components/ChangeTheme.vue')['default']
     DarkBackground: typeof import('./../views/components/DarkBackground.vue')['default']
     Dialog: typeof import('primevue/dialog')['default']
-    Divider: typeof import('primevue/divider')['default']
     DownloadCv: typeof import('./../views/components/DownloadCv.vue')['default']
+    Galeria: typeof import('./../views/components/Galeria.vue')['default']
+    Galleria: typeof import('primevue/galleria')['default']
     Image: typeof import('primevue/image')['default']
     Make: typeof import('./../views/components/make.vue')['default']
     MyButton: typeof import('./../views/components/MyButton.vue')['default']
