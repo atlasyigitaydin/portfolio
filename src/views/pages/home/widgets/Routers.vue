@@ -29,7 +29,7 @@ const routes: RoutesButton[] = [
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-column gap-3 justify-content-center align-items-center">
+  <div class="w-full h-20rem flex flex-column gap-3 justify-content-center align-items-center">
     <RoutesButtons v-for="rout in routes" :key="rout" :routes="rout" />
   </div>
   <Dialog v-model:visible="cvDialog" :closable="true" modal class="w-full border-round-xl mx-2 overflow-auto">

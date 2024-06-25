@@ -5,10 +5,12 @@ import Abilitys from './widgets/Abilitys.vue'
 </script>
 
 <template>
-  <div class="flex flex-column gap-5">
-    <Me />
-    <Abilitys />
-    <Routes />
+  <div class="flex flex-column gap-5 h-screen overflow-scroll">
+    <div class="flex flex-column gap-3">
+      <Me />
+      <Abilitys />
+      <Routes />
+    </div>
   </div>
 </template>
 

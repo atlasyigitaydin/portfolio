@@ -13,8 +13,6 @@ declare module '@vue/runtime-core' {
     Dialog: typeof import('primevue/dialog')['default']
     Divider: typeof import('primevue/divider')['default']
     DownloadCv: typeof import('./../views/components/DownloadCv.vue')['default']
-    Galeria: typeof import('./../views/components/Galeria.vue')['default']
-    Galleria: typeof import('primevue/galleria')['default']
     Image: typeof import('primevue/image')['default']
     Make: typeof import('./../views/components/make.vue')['default']
     MyButton: typeof import('./../views/components/MyButton.vue')['default']

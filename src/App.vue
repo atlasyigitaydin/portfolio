@@ -36,12 +36,12 @@ useHead({
   <ConfirmDialog />
   <DynamicDialog />
   <RouterSide class="montserrat">
+    <MyLinks class="top-0 left-0" />
     <router-view v-slot="{ Component, route }">
       <transition :name="route.meta.transition || 'router-animation'" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
-    <MyLinks class="fixed bottom-0 left-0" />
   </RouterSide>
 </template>
 

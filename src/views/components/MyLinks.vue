@@ -5,6 +5,7 @@ import LinkedinWhite from '../../assets/icons/linkedin_white.png'
 import LinkedinDark from '../../assets/icons/linkedin_dark.jpg'
 import InstagramWhite from '../../assets/icons/instagram_white.png'
 import InstagramDark from '../../assets/icons/instagram_dark.png'
+import ChangeTheme from './ChangeTheme.vue'
 
 const goTo = (url: string) => {
   window.open(url)
@@ -16,7 +17,7 @@ const isHomePage = computed(() => {
 </script>
 
 <template>
-  <div class="w-full flex">
+  <!-- <div class="w-full flex">
     <Divider
       :pt="{
         content: {
@@ -61,5 +62,8 @@ const isHomePage = computed(() => {
     >
       <ChangeTheme />
     </Divider>
+  </div> -->
+  <div class="fixed flex w-full justify-content-end top-0 left-0">
+    <ChangeTheme link />
   </div>
 </template>
