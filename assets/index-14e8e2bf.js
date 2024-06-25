@@ -1,1 +1,0 @@
-import{d as t,o as r,c,f as o}from"./app-dd5361a5.js";import m from"./Me-501c5693.js";import n from"./Routers-780f7b49.js";import s from"./Abilitys-ba5d6e05.js";import{b as e}from"./route-block-83d24a4e.js";const a={class:"flex flex-column gap-5"},f=t({__name:"index",setup(i){return(_,p)=>(r(),c("div",a,[o(m),o(s),o(n)]))}});typeof e=="function"&&e(f);export{f as default};

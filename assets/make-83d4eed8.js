@@ -1,1 +1,0 @@
-import{b as e,t,o as n,c as s,_ as o}from"./app-dd5361a5.js";const c={},_={class:"w-full h-full flex justify-content-center align-items-center gap-2"},i=e("div",{class:"pi pi-cog pi-spin"},null,-1),l=e("label",null,t("Under Construction"),-1),a=[i,l];function r(p,d){return n(),s("div",_,a)}const f=o(c,[["render",r]]);export{f as _};
