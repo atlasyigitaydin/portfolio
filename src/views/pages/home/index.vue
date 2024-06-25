@@ -10,6 +10,7 @@ import Abilitys from './widgets/Abilitys.vue'
       <Me />
       <Abilitys />
       <Routes />
+      <MyLinks class="mb-2" />
     </div>
   </div>
 </template>

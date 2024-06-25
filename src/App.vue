@@ -31,13 +31,14 @@ useHead({
 
 <template>
   <DarkBackground v-if="isDark" />
-  <WhiteBackground v-if="!isDark" />
+  <WhiteBackground v-else />
   <Toast />
   <ConfirmDialog />
   <DynamicDialog />
   <RouterSide class="montserrat">
-    <MyLinks class="top-0 left-0" />
+    <ChangeTheme class="fixed top-0 right-0 m-1" link />
     <router-view v-slot="{ Component, route }">
+      <!-- @vue-expect-error -->
       <transition :name="route.meta.transition || 'router-animation'" mode="out-in">
         <component :is="Component" />
       </transition>

@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BackToHomePage: typeof import('./../views/components/BackToHomePage.vue')['default']
     Button: typeof import('primevue/button')['default']
     ChangeTheme: typeof import('./../views/components/ChangeTheme.vue')['default']
     DarkBackground: typeof import('./../views/components/DarkBackground.vue')['default']
