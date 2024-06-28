@@ -1,16 +1,25 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { useAbilityStore } from '../../abilitys/stores/abilitys'
+import type { Ability } from '~/core/types'
 
 const router = useRouter()
 const abilitysStore = useAbilityStore()
+const selectAbility = (_ability: Ability) => {
+  abilitysStore.selectedAbility = _ability
+  router.push({ name: 'abilitys' })
+}
+
+const reactiveAbilitys = reactive(abilitysStore.abilitys)
+onMounted(() => {
+})
 </script>
 
 <template>
-  <div class="icon-marquee cursor-pointer" @click="router.push({ name: 'abilitys' })">
+  <div class="icon-marquee">
     <div class="icon-container">
-      <template v-for="ability in abilitysStore.abilitys" :key="ability.name">
-        <div class="icon-item">
+      <template v-for="ability in reactiveAbilitys" :key="ability.name">
+        <div class="icon-item cursor-pointer" @click="selectAbility(ability)">
           <img
             v-tooltip.bottom="ability.name"
             :src="ability.img"

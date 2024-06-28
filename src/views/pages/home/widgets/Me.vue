@@ -12,8 +12,14 @@ const binaryText = (text: string) => {
     <div
       class="gap-2 flex flex-column text-center"
     >
-      <label class="font-bold text-2xl"> {{ binaryText("YİĞİT AYDIN") }} </label>
-      <label class="text-xl"> {{ binaryText("FRONTEND DEVELOPER") }} </label>
+      <label
+        style=" -webkit-filter: drop-shadow(3px 3px 3px #222);
+      filter: drop-shadow(3px 3px 3px #222);" class="font-bold text-2xl"
+      > {{ binaryText("YİĞİT AYDIN") }} </label>
+      <label
+        style=" -webkit-filter: drop-shadow(2px 2px 2px #222);
+      filter: drop-shadow(2px 2px 2px #222);" class="text-xl"
+      > {{ binaryText("FRONTEND DEVELOPER") }} </label>
     </div>
   </div>
 </template>

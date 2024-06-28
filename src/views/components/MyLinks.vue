@@ -17,18 +17,24 @@ const goTo = (url: string) => {
       image-style="max-width: 25px;"
       :src="isDark ? GitWhite : GitDark"
       class="cursor-pointer"
+      style=" -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);"
       @click="goTo('https://github.com/AtlsDev')"
     />
     <Image
       image-style="max-width: 25px;"
       :src="isDark ? InstagramWhite : InstagramDark"
       class="cursor-pointer"
+      style=" -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);"
       @click="goTo('https://www.instagram.com/atlass.dev')"
     />
     <Image
       image-style="max-width: 25px;"
       :src="isDark ? LinkedinWhite : LinkedinDark"
-      class="cursor-pointer"
+      class="cursor-pointer border-round"
+      style=" -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);"
       @click="goTo('https://www.linkedin.com/in/yi%C4%9Fitayd%C4%B1n/')"
     />
   </div>

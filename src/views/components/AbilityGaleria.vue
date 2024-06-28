@@ -18,7 +18,7 @@ const prevAbility = () => {
       setTimeout(() => {
         abilitysStore.selectedAbility = reactiveAbility[0]
         reactiveAbility.unshift(lastContent)
-      })
+      }, 0)
     }
   }
 }
@@ -33,6 +33,11 @@ const nextAbility = () => {
       }, 1000)
     }
   }
+}
+
+const router = useRouter()
+const backToHomePage = () => {
+  router.push({ name: 'home' })
 }
 
 onMounted(() => {
@@ -71,6 +76,7 @@ onMounted(() => {
     <Button label="Prev" @click="prevAbility" />
     <Button label="Next" @click="nextAbility" />
   </div>
+  <Button class="fixed bottom-0" link label="backToHomePage" @click="backToHomePage" />
 </template>
 
 <style scoped>
