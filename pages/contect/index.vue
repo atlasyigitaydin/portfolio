@@ -1,9 +1,7 @@
 <script lang="ts" setup>
 // const device = useDevice()
 definePageMeta({
-  name: 'contact',
-  path: '/contact',
-  key: route => route.fullPath
+  name: 'contact'
 })
 </script>
 

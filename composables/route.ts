@@ -3,14 +3,14 @@ import { useRouter } from '#app'
 export function useNavigation () {
   const r = useRouter()
   return {
-    navigateTo (name: string) {
+    navigateTo (_name: string) {
       r.push({
-        path: name
+        name: _name
       })
     },
-    replacePath (name: string) {
+    replacePath (_name: string) {
       r.replace({
-        path: name
+        name: _name
       })
     }
   }
