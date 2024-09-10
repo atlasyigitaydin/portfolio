@@ -1,1 +1,0 @@
-import{_ as c}from"./make-4a0b63f1.js";import{_ as t,o as _,e as r}from"./app-c0d7bf68.js";import{b as o}from"./route-block-83d24a4e.js";const n={};function s(a,f){const e=c;return _(),r(e)}typeof o=="function"&&o(n);const u=t(n,[["render",s]]);export{u as default};
