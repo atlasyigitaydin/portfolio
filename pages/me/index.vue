@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-// const device = useDevice()
 definePageMeta({
   name: 'me',
-  path: '/',
-  layout: 'default'
+  path: '/'
 })
 </script>
 
