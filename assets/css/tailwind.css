@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+  font-family: "Montserrat", sans-serif;
+}
+  
+body {
+  @apply bg-zinc-950 text-gray-100 flex flex-col;
+}

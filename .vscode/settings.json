@@ -1,22 +1,7 @@
 {
-  "i18n-ally.sourceLanguage": "en",
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.localesPaths": "locales",
-  "i18n-ally.sortKeys": true,
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "files.associations": {
-    "*.css": "postcss"
-  },
-  "editor.formatOnSave": false,
-  "cSpell.words": [
-    "axios",
-    "composables",
-    "devextreme",
-    "Licens",
-    "Toplam",
-    "usermenu"
-  ]
+    "prettier.requireConfig": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "css.lint.unknownAtRules": "ignore"
 }
