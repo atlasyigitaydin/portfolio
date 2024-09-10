@@ -10,24 +10,21 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/revive-payload.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/head/runtime/plugins/unhead.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/pages/runtime/plugins/router.js").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/payload.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/revive-payload.server.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/@pinia+nuxt@0.4.11_rollup@3.29.4_typescript@5.6.2_vue@3.5.4/node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/pages/runtime/plugins/check-if-page-unused.js").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@1.4.2_rollup@3.29.4_vite@5.4.3_vue@3.5.4/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.server.js").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@1.4.2_rollup@3.29.4_vite@5.4.3_vue@3.5.4/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client.js").default> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+device@3.2.2_@types+node@22.5.4_h3@1.12.0_nitropack@2.9.7_nuxi@3.13.1_rollup@3.29.4_v_coe2buygvzrsjfjor25rmfod6y/node_modules/@nuxtjs/device/dist/runtime/plugin.js").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/dev-server-logs.js").default> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/plugins/check-if-layout-used.js").default>
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/pages/runtime/plugins/prerender.server.js").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
 
   interface NuxtAppLiterals {
-    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | 'nuxt:prefetch' | 'nuxt:checkIfPageUnused' | 'nuxt:checkIfLayoutUsed'
+    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:payload' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | 'nuxt:prefetch'
   }
 }
 
