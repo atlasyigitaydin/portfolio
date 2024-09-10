@@ -186,7 +186,6 @@ declare global {
   const useConfirmDialog: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useConfirmDialog']
   const useCookie: typeof import('../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/composables/cookie')['useCookie']
   const useCounter: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useCounter']
-  const useCounterStore: typeof import('../../stores/counterStore')['useCounterStore']
   const useCssModule: typeof import('../../node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue')['useCssModule']
   const useCssVar: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useCssVar']
   const useCssVars: typeof import('../../node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue')['useCssVars']
@@ -587,7 +586,6 @@ declare module 'vue' {
     readonly useConfirmDialog: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useConfirmDialog']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCounter: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useCounter']>
-    readonly useCounterStore: UnwrapRef<typeof import('../../stores/counterStore')['useCounterStore']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue')['useCssModule']>
     readonly useCssVar: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useCssVar']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue')['useCssVars']>
