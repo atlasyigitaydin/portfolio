@@ -12,7 +12,7 @@ import { b as baseURL } from '../_/renderer.mjs';
 import { createHooks } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
 import { getContext } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unctx@2.3.1/node_modules/unctx/dist/index.mjs';
 import { sanitizeStatusCode, createError as createError$1, getRequestHeaders, appendHeader } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/h3@1.12.0/node_modules/h3/dist/index.mjs';
-import { getActiveHead, CapoPlugin } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unhead@1.11.2/node_modules/unhead/dist/index.mjs';
+import { CapoPlugin, getActiveHead } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unhead@1.11.2/node_modules/unhead/dist/index.mjs';
 import { toRouteMatcher, createRouter as createRouter$1 } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
 import 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/vue-bundle-renderer@2.1.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/devalue@5.0.0/node_modules/devalue/index.js';
@@ -37255,7 +37255,7 @@ const mr = Symbol.toStringTag, yi = n((i) => typeof i == "object" && typeof i.ap
       for (const [p, h] of l2) u.append(p, h);
       return u;
     }
-    const { toFormData: a2 } = await import('./multipart-parser-DjPa0eu7.mjs');
+    const { toFormData: a2 } = await import('./multipart-parser-BudihpYl.mjs');
     return a2(this.body, o2);
   }
   async blob() {
@@ -39059,6 +39059,27 @@ function injectHead() {
   if (!head && "prerender" !== "production")
     console.warn("Unhead is missing Vue context, falling back to shared context. This may have unexpected results.");
   return head || getActiveHead();
+}
+function useHead(input, options = {}) {
+  const head = options.head || injectHead();
+  if (head) {
+    if (!head.ssr)
+      return clientUseHead(head, input, options);
+    return head.push(input, options);
+  }
+}
+function clientUseHead(head, input, options = {}) {
+  const deactivated = vueExports.ref(false);
+  const resolvedInput = vueExports.ref({});
+  vueExports.watchEffect(() => {
+    resolvedInput.value = deactivated.value ? {} : resolveUnrefHeadInput(input);
+  });
+  const entry2 = head.push(resolvedInput.value, options);
+  vueExports.watch(resolvedInput, (e) => {
+    entry2.patch(e);
+  });
+  vueExports.getCurrentInstance();
+  return entry2;
 }
 [CapoPlugin({ track: true })];
 const unhead_md6AaOvrmv = /* @__PURE__ */ defineNuxtPlugin({
@@ -41306,14 +41327,19 @@ async function getRouteRules(url) {
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
 }
-const __nuxt_page_meta$3 = {
+const __nuxt_page_meta$4 = {
   name: "contact",
   path: "/contact",
   key: (route) => route.fullPath
 };
+const __nuxt_page_meta$3 = {
+  name: "home",
+  key: (route) => route.fullPath,
+  path: "/"
+};
 const __nuxt_page_meta$2 = {
   name: "me",
-  path: "/",
+  path: "/me",
   key: (route) => route.fullPath
 };
 const __nuxt_page_meta$1 = {
@@ -41330,12 +41356,18 @@ const _routes = [
   {
     name: "contact",
     path: "/contact",
-    meta: __nuxt_page_meta$3 || {},
+    meta: __nuxt_page_meta$4 || {},
     component: () => import('./index-DxS80dhy.mjs').then((m) => m.default || m)
   },
   {
-    name: "me",
+    name: "home",
     path: "/",
+    meta: __nuxt_page_meta$3 || {},
+    component: () => import('./index-Mwt5ARCY.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "me",
+    path: "/me",
     meta: __nuxt_page_meta$2 || {},
     component: () => import('./index-CnQuTUXT.mjs').then((m) => m.default || m)
   },
@@ -49342,7 +49374,7 @@ var ssrRenderSuspense_1 = serverRenderer_cjs_prod.ssrRenderSuspense = ssrRenderS
 serverRenderer_cjs_prod.ssrRenderTeleport = ssrRenderTeleport;
 var ssrRenderVNode = serverRenderer_cjs_prod.ssrRenderVNode = renderVNode;
 const layouts = {
-  default: () => import('./default-7FxAqSVi.mjs').then((m) => m.default || m)
+  default: () => import('./default-BbplIHG4.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = vueExports.defineComponent({
   name: "LayoutLoader",
@@ -49584,37 +49616,50 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
-const _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
+const _sfc_main$2 = /* @__PURE__ */ vueExports.defineComponent({
+  __name: "app",
+  __ssrInlineRender: true,
+  setup(__props) {
+    useHead({
+      title: "Atlas Yiğit Aydın",
+      meta: [
+        {
+          name: "description",
+          content: "Atlas Yiğit Aydın Portfolio"
+        }
+      ],
+      link: [
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "/app-logo.svg"
+        }
+      ]
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_NuxtLayout = __nuxt_component_0;
+      const _component_NuxtPage = __nuxt_component_1;
+      _push(ssrRenderComponent_1(_component_NuxtLayout, _attrs, {
+        default: vueExports.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent_1(_component_NuxtPage, null, null, _parent2, _scopeId));
+          } else {
+            return [
+              vueExports.createVNode(_component_NuxtPage)
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+    };
   }
-  return target;
-};
-const _sfc_main$2 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtLayout = __nuxt_component_0;
-  const _component_NuxtPage = __nuxt_component_1;
-  _push(ssrRenderComponent_1(_component_NuxtLayout, _attrs, {
-    default: vueExports.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(ssrRenderComponent_1(_component_NuxtPage, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vueExports.createVNode(_component_NuxtPage)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
+});
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = vueExports.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main$1 = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -49636,8 +49681,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = vueExports.defineAsyncComponent(() => import('./error-404-CgbonJeE.mjs').then((r) => r.default || r));
-    const _Error = vueExports.defineAsyncComponent(() => import('./error-500-Bj9uqokT.mjs').then((r) => r.default || r));
+    const _Error404 = vueExports.defineAsyncComponent(() => import('./error-404-BJzVtnOK.mjs').then((r) => r.default || r));
+    const _Error = vueExports.defineAsyncComponent(() => import('./error-500-C4rahNMx.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent_1(vueExports.unref(ErrorTemplate), vueExports.mergeProps({ statusCode: vueExports.unref(statusCode), statusMessage: vueExports.unref(statusMessage), description: vueExports.unref(description), stack: vueExports.unref(stack) }, _attrs), null, _parent));
@@ -49684,7 +49729,7 @@ const _sfc_main = {
           } else if (vueExports.unref(SingleRenderer)) {
             ssrRenderVNode(_push, vueExports.createVNode(vueExports.resolveDynamicComponent(vueExports.unref(SingleRenderer)), null, null), _parent);
           } else {
-            _push(ssrRenderComponent_1(vueExports.unref(AppComponent), null, null, _parent));
+            _push(ssrRenderComponent_1(vueExports.unref(_sfc_main$2), null, null, _parent));
           }
         },
         _: 1
@@ -49718,5 +49763,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { On as O, _export_sfc as _, navigateTo as a, useNuxtApp as b, useRuntimeConfig as c, withoutTrailingSlash as d, entry$1 as default, ssrInterpolate_1 as e, ssrRenderComponent_1 as f, resolveUnrefHeadInput as g, hasProtocol as h, injectHead as i, joinURL as j, br as k, ssrRenderList_1 as l, ssrRenderClass_1 as m, nuxtLinkDefaults as n, ssrRenderSlot_1 as o, parseQuery$1 as p, resolveRouteObject as r, ssrRenderAttrs_1 as s, useRouter as u, vueExports as v, withTrailingSlash as w };
+export { On as O, navigateTo as a, useNuxtApp as b, useRuntimeConfig as c, withoutTrailingSlash as d, entry$1 as default, useHead as e, ssrInterpolate_1 as f, ssrRenderComponent_1 as g, hasProtocol as h, br as i, joinURL as j, ssrRenderList_1 as k, ssrRenderClass_1 as l, ssrRenderSlot_1 as m, nuxtLinkDefaults as n, parseQuery$1 as p, resolveRouteObject as r, ssrRenderAttrs_1 as s, useRouter as u, vueExports as v, withTrailingSlash as w };
 //# sourceMappingURL=server.mjs.map

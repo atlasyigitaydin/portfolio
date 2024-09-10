@@ -253,6 +253,7 @@ declare global {
   const useMouseInElement: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMouseInElement']
   const useMousePressed: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMousePressed']
   const useMutationObserver: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMutationObserver']
+  const useNavigation: typeof import('../../composables/route')['useNavigation']
   const useNavigatorLanguage: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNavigatorLanguage']
   const useNetwork: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNetwork']
   const useNow: typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNow']
@@ -653,6 +654,7 @@ declare module 'vue' {
     readonly useMouseInElement: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMouseInElement']>
     readonly useMousePressed: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMousePressed']>
     readonly useMutationObserver: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useMutationObserver']>
+    readonly useNavigation: UnwrapRef<typeof import('../../composables/route')['useNavigation']>
     readonly useNavigatorLanguage: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNavigatorLanguage']>
     readonly useNetwork: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNetwork']>
     readonly useNow: UnwrapRef<typeof import('../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.4/node_modules/@vueuse/core')['useNow']>

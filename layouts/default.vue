@@ -1,41 +1,23 @@
 <script setup lang="ts">
 
+const r = (name: string) => { useNavigation().navigateTo(name) }
+
 const currentRoute = computed(() => {
   return useRouter().currentRoute.value.name
 })
 
 const items = [{
   key: 'me',
-  label: 'Me',
-  to: () => {
-    navigateTo({
-      name: 'me'
-    })
-  }
+  label: 'Me'
 }, {
   key: 'projects',
-  label: 'Projects',
-  to: () => {
-    navigateTo({
-      name: 'projects'
-    })
-  }
+  label: 'Projects'
 }, {
   key: 'works',
-  label: 'Works',
-  to: () => {
-    navigateTo({
-      name: 'works'
-    })
-  }
+  label: 'Works'
 }, {
   key: 'contact',
-  label: 'Contact me',
-  to: () => {
-    navigateTo({
-      name: 'contact'
-    })
-  }
+  label: 'Contact me'
 }]
 </script>
 
@@ -47,7 +29,7 @@ const items = [{
         :key="index"
         class="headerButtons"
         :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
-        @click="item.to"
+        @click="r(item.key)"
       >
         {{ item.label }}
       </div>
