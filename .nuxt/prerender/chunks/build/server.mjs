@@ -41309,21 +41309,22 @@ async function getRouteRules(url) {
 const __nuxt_page_meta$3 = {
   name: "contact",
   path: "/contact",
-  layout: "default"
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta$2 = {
   name: "me",
-  path: "/"
+  path: "/",
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta$1 = {
   name: "projects",
   path: "/projects",
-  layout: "default"
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta = {
   name: "works",
   path: "/works",
-  layout: "default"
+  key: (route) => route.fullPath
 };
 const _routes = [
   {

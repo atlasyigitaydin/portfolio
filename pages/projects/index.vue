@@ -3,7 +3,7 @@
 definePageMeta({
   name: 'projects',
   path: '/projects',
-  layout: 'default'
+  key: route => route.fullPath
 })
 </script>
 

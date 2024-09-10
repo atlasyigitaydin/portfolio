@@ -1,1 +1,0 @@
-import{d as t,v as s,x as n,t as o}from"./CZS8qx4-.js";const r={class:"h-[800px] text-center w-full flex justify-center items-center overflow-auto"},i=t({__name:"index",setup(a){return(c,e)=>(o(),s("div",r,e[0]||(e[0]=[n("div",{class:"w-5/12 text-center"}," contact me ",-1)])))}});export{i as default};
