@@ -41449,7 +41449,7 @@ function _getHashElementScrollMarginTop(selector) {
   return 0;
 }
 const configRouterOptions = {
-  hashMode: false,
+  hashMode: true,
   scrollBehaviorType: "auto"
 };
 const routerOptions = {
@@ -49364,7 +49364,7 @@ var ssrRenderSuspense_1 = serverRenderer_cjs_prod.ssrRenderSuspense = ssrRenderS
 serverRenderer_cjs_prod.ssrRenderTeleport = ssrRenderTeleport;
 var ssrRenderVNode = serverRenderer_cjs_prod.ssrRenderVNode = renderVNode;
 const layouts = {
-  default: () => import('./default-BbplIHG4.mjs').then((m) => m.default || m)
+  default: () => import('./default-DRth488V.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = vueExports.defineComponent({
   name: "LayoutLoader",
@@ -49612,17 +49612,15 @@ const _sfc_main$2 = /* @__PURE__ */ vueExports.defineComponent({
   setup(__props) {
     useHead({
       title: "Atlas Yiğit Aydın",
-      meta: [
-        {
-          name: "description",
-          content: "Atlas Yiğit Aydın Portfolio"
-        }
-      ],
       link: [
         {
           rel: "icon",
-          type: "image/svg+xml",
-          href: "/app-logo.svg"
+          type: "image/png",
+          href: "/favicon.ico"
+        },
+        {
+          rel: "canonical",
+          href: "https://www.atlasyigitaydin.com"
         }
       ]
     });

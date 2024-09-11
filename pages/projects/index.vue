@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// const device = useDevice()
 definePageMeta({
   name: 'projects'
 })

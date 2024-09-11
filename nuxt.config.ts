@@ -3,13 +3,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     baseURL: '/'
   },
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config'
-  },
-  imports: {
-    dirs: ['stores']
-  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',
@@ -19,5 +13,20 @@ export default defineNuxtConfig({
     ],
     '@vueuse/nuxt',
     '@nuxtjs/device'
-  ]
+  ],
+
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config'
+  },
+
+  imports: {
+    dirs: ['stores']
+  },
+
+  router: {
+    options: {
+      hashMode: true
+    }
+  }
 })

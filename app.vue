@@ -3,17 +3,15 @@ import { useHead } from '#imports'
 
 useHead({
   title: 'Atlas Yiğit Aydın',
-  meta: [
-    {
-      name: 'description',
-      content: 'Atlas Yiğit Aydın Portfolio'
-    }
-  ],
   link: [
     {
       rel: 'icon',
-      type: 'image/svg+xml',
-      href: '/app-logo.svg'
+      type: 'image/png',
+      href: '/favicon.ico'
+    },
+    {
+      rel: 'canonical',
+      href: 'https://www.atlasyigitaydin.com'
     }
   ]
 })
