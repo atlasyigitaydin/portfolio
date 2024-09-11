@@ -95,14 +95,14 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "pages/contect/index.vue": {
+  "pages/contact/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "file": "CuiDMXWT.js",
     "name": "index",
-    "src": "pages/contect/index.vue",
+    "src": "pages/contact/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/app/entry.js"

@@ -48,9 +48,9 @@ const _sfc_main = /* @__PURE__ */ vueExports.defineComponent({
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = vueExports.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/contect/index.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/contact/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-DxS80dhy.mjs.map
+//# sourceMappingURL=index-DMQKkzeB.mjs.map

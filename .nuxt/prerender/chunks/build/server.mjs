@@ -41352,7 +41352,7 @@ const _routes = [
     name: "contact",
     path: "/contact",
     meta: __nuxt_page_meta$4 || {},
-    component: () => import('./index-DxS80dhy.mjs').then((m) => m.default || m)
+    component: () => import('./index-DMQKkzeB.mjs').then((m) => m.default || m)
   },
   {
     name: "home",
