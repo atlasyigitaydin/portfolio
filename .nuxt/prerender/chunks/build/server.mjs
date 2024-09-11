@@ -41328,24 +41328,29 @@ async function getRouteRules(url) {
   }
 }
 const __nuxt_page_meta$4 = {
-  name: "contact"
+  name: "contact",
+  path: "/contact"
 };
 const __nuxt_page_meta$3 = {
-  name: "home"
+  name: "home",
+  path: "/"
 };
 const __nuxt_page_meta$2 = {
-  name: "me"
+  name: "me",
+  path: "/me"
 };
 const __nuxt_page_meta$1 = {
-  name: "projects"
+  name: "projects",
+  path: "/projects"
 };
 const __nuxt_page_meta = {
-  name: "works"
+  name: "works",
+  path: "/works"
 };
 const _routes = [
   {
     name: "contact",
-    path: "/contect",
+    path: "/contact",
     meta: __nuxt_page_meta$4 || {},
     component: () => import('./index-DxS80dhy.mjs').then((m) => m.default || m)
   },

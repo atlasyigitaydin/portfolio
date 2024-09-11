@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 definePageMeta({
-  name: 'me'
+  name: 'me',
+  path: '/me'
 })
 </script>
 
