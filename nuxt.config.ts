@@ -13,14 +13,16 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config'
-  },
+  }
+
+  // nitro: {
+  //   routeRules: {
+  //     '/**': { isr: false }
+  //   }
+  // }
 
   // imports: {
   //   dirs: ['stores', 'pages', 'components'],
   // },
-
-  generate: {
-    routes: ['/', '/me', '/projects', '/works', '/contact']
-  }
 
 })

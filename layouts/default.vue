@@ -1,38 +1,48 @@
 <script setup lang="ts">
-const currentRoute = computed(() => {
-  return useRouter().currentRoute.value.name
+
+const currentPath = computed(() => {
+  return useRouter().currentRoute.value.path
 })
 
 const items = [{
   key: 'me',
-  label: 'Me'
+  label: 'Me',
+  path: '/me'
 }, {
   key: 'projects',
-  label: 'Projects'
+  label: 'Projects',
+  path: '/projects'
 }, {
   key: 'works',
-  label: 'Works'
+  label: 'Works',
+  path: '/works'
 }, {
   key: 'contact',
-  label: 'Contact me'
+  label: 'Contact me',
+  path: '/contact'
 }]
 </script>
 
 <template>
   <div>
     <header>
-      <div class="absolute z-0 left-0 top-0 flex w-full h-full lg:justify-center justify-start lg:px-0 px-4 items-center">
-        <NuxtLink :to="{name: 'home'}" class="w-5/12">
-          <div class="h-6 w-6 border-2 rounded-full hover:bg-white transition-all duration-500 ease-in-out" :class="currentRoute === 'home' ? 'bg-white': ''" />
+      <div
+        class="absolute z-0 left-0 top-0 flex w-full h-full lg:justify-center justify-start lg:px-0 px-4 items-center"
+      >
+        <NuxtLink to="/" class="w-5/12">
+          <div
+            class="h-6 w-6 border-2 rounded-full hover:bg-white transition-all duration-500 ease-in-out"
+            :class="currentPath === '/' ? 'bg-white' : ''"
+          />
         </NuxtLink>
       </div>
       <div
         v-for="(item, index) in items"
         :key="index"
         class="headerButtons"
-        :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
+        :class="item.path === currentPath ? 'headerButtonsClick' : ''"
       >
-        <NuxtLink :to="{ name: item.key === currentRoute ? 'home' : item.key }">
+        <NuxtLink :to="item.path === currentPath ? '/' : item.path">
           {{ item.label }}
         </NuxtLink>
       </div>

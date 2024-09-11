@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-definePageMeta({
-  name: 'contact',
-  path: '/contact',
-  key: route => route.fullPath
-})
+// definePageMeta({
+//   name: 'contact',
+//   path: '/contact',
+//   validate: route => !!route,
+//   key: route => route.fullPath
+// })
 </script>
 
 <template>
