@@ -26,15 +26,15 @@ export default defineNuxtConfig({
       'pages',
       'components'
     ]
-  }
+  },
 
-  // generate: {
-  //   routes: [
-  //     '/',
-  //     '/me',
-  //     '/projects',
-  //     '/works',
-  //     '/contact'
-  //   ]
-  // }
+  generate: {
+    routes: [
+      '/',
+      '/me',
+      '/projects',
+      '/works',
+      '/contact'
+    ]
+  }
 })

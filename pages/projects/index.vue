@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 definePageMeta({
   name: 'projects',
-  path: '/projects'
+  path: '/projects',
+  key: route => route.fullPath
 })
 </script>
 

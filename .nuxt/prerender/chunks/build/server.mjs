@@ -41329,23 +41329,29 @@ async function getRouteRules(url) {
 }
 const __nuxt_page_meta$4 = {
   name: "contact",
-  path: "/contact"
+  path: "/contact",
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta$3 = {
   name: "home",
-  path: "/"
+  path: "/",
+  key: (route) => route.fullPath
+  // layout: false
 };
 const __nuxt_page_meta$2 = {
   name: "me",
-  path: "/me"
+  path: "/me",
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta$1 = {
   name: "projects",
-  path: "/projects"
+  path: "/projects",
+  key: (route) => route.fullPath
 };
 const __nuxt_page_meta = {
   name: "works",
-  path: "/works"
+  path: "/works",
+  key: (route) => route.fullPath
 };
 const _routes = [
   {

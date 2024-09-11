@@ -4,7 +4,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "deploy": "nuxt generate && gh-pages -d dist",
+    "deploy": "nuxt generate && copy CNAME dist\\ && gh-pages -d dist",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

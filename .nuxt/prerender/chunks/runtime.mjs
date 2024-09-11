@@ -66,7 +66,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "8703caa4-f6e9-4059-bc29-39cb370948f2",
+    "buildId": "5ba824de-43e2-4627-986c-638b96aa64c2",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
