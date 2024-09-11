@@ -23,7 +23,7 @@ const items = [{
     <header>
       <div class="absolute z-0 left-0 top-0 flex w-full h-full lg:justify-center justify-start lg:px-0 px-4 items-center">
         <NuxtLink :to="{name: 'home'}" class="w-5/12">
-          <div class="h-6 w-6 border-2 rounded-full hover:bg-white" />
+          <div class="h-6 w-6 border-2 rounded-full hover:bg-white transition-all duration-500 ease-in-out" :class="currentRoute === 'home' ? 'bg-white': ''" />
         </NuxtLink>
       </div>
       <div
