@@ -15,14 +15,4 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config'
   }
 
-  // nitro: {
-  //   routeRules: {
-  //     '/**': { isr: false }
-  //   }
-  // }
-
-  // imports: {
-  //   dirs: ['stores', 'pages', 'components'],
-  // },
-
 })
