@@ -15,7 +15,8 @@
     ]
   },
   "dependencies": {
-    "@nuxt/kit": "npm:@nuxt/kit-nightly@latest"
+    "@nuxt/kit": "npm:@nuxt/kit-nightly@latest",
+    "@vercel/speed-insights": "^1.0.12"
   },
   "devDependencies": {
     "@nuxtjs/device": "^3.1.0",

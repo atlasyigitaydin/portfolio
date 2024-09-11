@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 import { useHead } from '#imports'
 
 useHead({
@@ -16,6 +17,7 @@ useHead({
 <template>
   <NuxtLayout>
     <NuxtPage />
+    <SpeedInsights />
   </NuxtLayout>
 </template>
 
