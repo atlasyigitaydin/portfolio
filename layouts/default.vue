@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const r = (name: string) => { useNavigation().navigateTo(name) }
+// const r = (name: string) => { useNavigation().navigateTo(name) }
 
 const currentRoute = computed(() => {
   return useRouter().currentRoute.value.name
@@ -22,20 +22,19 @@ const items = [{
 </script>
 
 <template>
-  <div>
-    <header>
-      <div
-        v-for="(item, index) in items"
-        :key="index"
-        class="headerButtons"
-        :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
-        @click="r(item.key)"
-      >
+  <header>
+    <div
+      v-for="(item, index) in items"
+      :key="index"
+      class="headerButtons"
+      :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
+    >
+      <NuxtLink :to="{name: item.key}">
         {{ item.label }}
-      </div>
-    </header>
-    <slot />
-  </div>
+      </NuxtLink>
+    </div>
+  </header>
+  <slot />
 </template>
 
 <style scoped>

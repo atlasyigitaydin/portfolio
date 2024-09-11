@@ -4,6 +4,8 @@ export default defineNuxtConfig({
     baseURL: '/'
   },
 
+  ssr: true,
+
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
   name: 'home',
-  path: '/',
-  key: route => route.fullPath
+  // path: '/',
+  // key: route => route.fullPath,
   // layout: false
 })
 </script>
@@ -14,3 +14,15 @@ definePageMeta({
     </div>
   </div>
 </template>
+
+<style scoped>
+.button {
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
