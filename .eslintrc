@@ -3,7 +3,6 @@
     "@nuxtjs/eslint-config-typescript"
   ],
   "rules": {
-    "no-console": "off",
-    "eslint-plugin-vue/no-multiple-template-root": false
+    "no-console": "off"
   }
 }

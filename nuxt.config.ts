@@ -1,28 +1,26 @@
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
-    baseURL: '/',
+    baseURL: '/'
   },
-
-  ssr: true,
 
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    '@nuxtjs/device',
+    '@nuxtjs/device'
   ],
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config',
+    configPath: 'tailwind.config'
   },
 
-  imports: {
-    dirs: ['stores', 'pages', 'components'],
-  },
+  // imports: {
+  //   dirs: ['stores', 'pages', 'components'],
+  // },
 
   generate: {
-    routes: ['/', '/me', '/projects', '/works', '/contact'],
-  },
-  
+    routes: ['/', '/me', '/projects', '/works', '/contact']
+  }
+
 })

@@ -6,12 +6,17 @@
     "generate": "nuxt generate",
     "deploy": "nuxt generate && copy CNAME dist\\ && gh-pages -d dist",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "lint-staged": {
     "*.{ts,vue}": [
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-nightly@latest"
   },
   "devDependencies": {
     "@nuxtjs/device": "^3.1.0",

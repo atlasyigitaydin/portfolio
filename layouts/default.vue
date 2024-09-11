@@ -1,7 +1,4 @@
 <script setup lang="ts">
-
-// const r = (name: string) => { useNavigation().navigateTo(name) }
-
 const currentRoute = computed(() => {
   return useRouter().currentRoute.value.name
 })
@@ -22,19 +19,26 @@ const items = [{
 </script>
 
 <template>
-  <header>
-    <div
-      v-for="(item, index) in items"
-      :key="index"
-      class="headerButtons"
-      :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
-    >
-      <NuxtLink :to="{name: item.key}">
-        {{ item.label }}
-      </NuxtLink>
-    </div>
-  </header>
-  <slot />
+  <div>
+    <header>
+      <div class="absolute z-0 left-0 top-0 flex w-full h-full lg:justify-center justify-start lg:px-0 px-4 items-center">
+        <NuxtLink :to="{name: 'home'}" class="w-5/12">
+          <div class="h-6 w-6 border-2 rounded-full hover:bg-white" />
+        </NuxtLink>
+      </div>
+      <div
+        v-for="(item, index) in items"
+        :key="index"
+        class="headerButtons"
+        :class="item.key === currentRoute ? 'headerButtonsClick' : ''"
+      >
+        <NuxtLink :to="{ name: item.key === currentRoute ? 'home' : item.key }">
+          {{ item.label }}
+        </NuxtLink>
+      </div>
+    </header>
+    <slot />
+  </div>
 </template>
 
 <style scoped>
@@ -43,8 +47,7 @@ header {
 }
 
 .headerButtons {
-  @apply cursor-pointer shadow-lg lg:text-lg text-sm lg:mx-4 mx-4 lg:opacity-80
-  font-extralight transition-all duration-500 ease-in-out;
+  @apply cursor-pointer shadow-lg lg:text-lg text-sm lg:mx-4 mx-4 lg:opacity-80 font-extralight transition-all duration-500 ease-in-out z-10;
 }
 
 .headerButtonsClick {
