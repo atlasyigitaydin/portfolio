@@ -1,7 +1,22 @@
 <script setup lang="ts">
 
-const currentPath = computed(() => {
-  return useRouter().currentRoute.value.path
+const router = useRouter()
+
+const previousPath = ref('')
+
+const currentPath = computed(() => router.currentRoute.value.path)
+const historyPath = computed(() => previousPath.value)
+
+const updatePreviousPath = (_: any, from: {path: string}) => {
+  previousPath.value = from.path
+}
+
+onMounted(() => {
+  router.beforeEach(updatePreviousPath)
+})
+
+onUnmounted(() => {
+  router.beforeEach(() => {})
 })
 
 const items = [{
@@ -29,7 +44,7 @@ const items = [{
       <div
         class="absolute z-0 left-0 top-0 flex w-full h-full lg:justify-center justify-start lg:px-0 px-4 items-center"
       >
-        <NuxtLink to="/" class="w-5/12">
+        <NuxtLink :to="currentPath === '/' ? historyPath : '/'" class="w-5/12">
           <div
             class="h-6 w-6 border-2 rounded-full hover:bg-white transition-all duration-500 ease-in-out"
             :class="currentPath === '/' ? 'bg-white' : ''"
