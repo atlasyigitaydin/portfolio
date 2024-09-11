@@ -1,13 +1,13 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/vue-bundle-renderer@2.1.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/h3@1.12.0/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/devalue@5.0.0/node_modules/devalue/index.js';
-import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/ufo@1.5.4/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/@unhead+ssr@1.11.2/node_modules/@unhead/ssr/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/vue-bundle-renderer@2.1.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/h3@1.12.0/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/devalue@5.0.0/node_modules/devalue/index.js';
+import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/ufo@1.5.4/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/@unhead+ssr@1.11.2/node_modules/@unhead/ssr/dist/index.mjs';
 import { u as useRuntimeConfig, a as useNitroApp, b as useStorage, g as getRouteRules } from '../runtime.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unhead@1.11.2/node_modules/unhead/dist/index.mjs';
-import { version, unref } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/@unhead+shared@1.11.2/node_modules/@unhead/shared/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/unhead@1.11.2/node_modules/unhead/dist/index.mjs';
+import { version, unref } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/vue@3.5.4_typescript@5.6.2/node_modules/vue/index.mjs';
+import { defineHeadPlugin } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/@unhead+shared@1.11.2/node_modules/@unhead/shared/dist/index.mjs';
 
 function defineRenderHandler(handler) {
   const runtimeConfig = useRuntimeConfig();

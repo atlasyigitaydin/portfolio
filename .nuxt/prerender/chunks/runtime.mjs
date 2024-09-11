@@ -1,21 +1,21 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/h3@1.12.0/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/ofetch@1.3.4/node_modules/ofetch/dist/node.mjs';
-import destr from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/ohash@1.1.3/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/ufo@1.5.4/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/drivers/fs.mjs';
-import file_58_47_47_47C_58_47Users_47evane_47Desktop_47Portfolio_Website_47node_modules_47_46pnpm_47nuxt_643_4613_461__64types_43node_6422_465_464_eslint_648_4657_460_rollup_643_4629_464_typescript_645_466_462_vite_645_464_463_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js from 'file:///C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
-import unstorage_47drivers_47fs_45lite from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/drivers/fs-lite.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/h3@1.12.0/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/ofetch@1.3.4/node_modules/ofetch/dist/node.mjs';
+import destr from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/ohash@1.1.3/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/ufo@1.5.4/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/drivers/fs.mjs';
+import file_58_47_47_47C_58_47Users_47evane_47Desktop_47MyProjects_47Portfolio_Website_47node_modules_47_46pnpm_47nuxt_643_4613_461__64types_43node_6422_465_464_eslint_648_4657_460_rollup_643_4629_464_typescript_645_466_462_vite_645_464_463_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js from 'file:///C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
+import unstorage_47drivers_47fs_45lite from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/unstorage@1.12.0_ioredis@5.4.1/node_modules/unstorage/drivers/fs-lite.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file://C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/pathe@1.1.2/node_modules/pathe/dist/index.mjs';
+import { dirname, resolve } from 'file://C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/pathe@1.1.2/node_modules/pathe/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -66,7 +66,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "81c3d1e7-ec15-4e76-8d91-717b646d72e8",
+    "buildId": "d2479318-8fde-4036-a7ea-9fc4665a9ad8",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -145,7 +145,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/evane/Desktop/Portfolio_Website/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/evane/Desktop/MyProjects/Portfolio_Website/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -157,12 +157,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('internal:nuxt:prerender', file_58_47_47_47C_58_47Users_47evane_47Desktop_47Portfolio_Website_47node_modules_47_46pnpm_47nuxt_643_4613_461__64types_43node_6422_465_464_eslint_648_4657_460_rollup_643_4629_464_typescript_645_466_462_vite_645_464_463_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"file:///C:/Users/evane/Desktop/Portfolio_Website/node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"C:/Users/evane/Desktop/Portfolio_Website/.nuxt/cache/nitro/prerender"}));
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"C:\\Users\\evane\\Desktop\\Portfolio_Website\\.data\\kv"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\evane\\Desktop\\Portfolio_Website","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\evane\\Desktop\\Portfolio_Website\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\evane\\Desktop\\Portfolio_Website\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\evane\\Desktop\\Portfolio_Website\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('internal:nuxt:prerender', file_58_47_47_47C_58_47Users_47evane_47Desktop_47MyProjects_47Portfolio_Website_47node_modules_47_46pnpm_47nuxt_643_4613_461__64types_43node_6422_465_464_eslint_648_4657_460_rollup_643_4629_464_typescript_645_466_462_vite_645_464_463_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"file:///C:/Users/evane/Desktop/MyProjects/Portfolio_Website/node_modules/.pnpm/nuxt@3.13.1_@types+node@22.5.4_eslint@8.57.0_rollup@3.29.4_typescript@5.6.2_vite@5.4.3/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"C:/Users/evane/Desktop/MyProjects/Portfolio_Website/.nuxt/cache/nitro/prerender"}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"C:\\Users\\evane\\Desktop\\MyProjects\\Portfolio_Website\\.data\\kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\evane\\Desktop\\MyProjects\\Portfolio_Website","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\evane\\Desktop\\MyProjects\\Portfolio_Website\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\evane\\Desktop\\MyProjects\\Portfolio_Website\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\evane\\Desktop\\MyProjects\\Portfolio_Website\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -754,11 +754,11 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _lazy_aMGvHz = () => import('./_/renderer.mjs').then(function (n) { return n.r; });
+const _lazy_IuG2zy = () => import('./_/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/**', handler: _lazy_aMGvHz, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_IuG2zy, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
