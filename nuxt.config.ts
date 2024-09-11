@@ -21,16 +21,20 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['stores']
-  },
-
-  generate: {
-    routes: [
-      '/',
-      '/me',
-      '/projects',
-      '/works',
-      '/contact'
+    dirs: [
+      'stores',
+      'pages',
+      'components'
     ]
   }
+
+  // generate: {
+  //   routes: [
+  //     '/',
+  //     '/me',
+  //     '/projects',
+  //     '/works',
+  //     '/contact'
+  //   ]
+  // }
 })
