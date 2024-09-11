@@ -22,11 +22,6 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['stores']
-  },
-
-  router: {
-    options: {
-      hashMode: true
-    }
   }
+
 })

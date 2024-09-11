@@ -1,0 +1,1 @@
+import{d as t,x as s,y as o,v as n}from"./BkeuxhLf.js";const r={class:"h-[800px] text-center w-full flex justify-center items-center overflow-auto"},i=t({__name:"index",setup(a){return(c,e)=>(n(),s("div",r,e[0]||(e[0]=[o("div",{class:"w-5/12 text-center"}," works ",-1)])))}});export{i as default};

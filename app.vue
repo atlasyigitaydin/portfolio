@@ -7,11 +7,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.ico'
-    },
-    {
-      rel: 'canonical',
-      href: 'https://www.atlasyigitaydin.com'
+      href: '/favicon.png'
     }
   ]
 })

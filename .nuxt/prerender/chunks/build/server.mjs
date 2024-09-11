@@ -41449,7 +41449,7 @@ function _getHashElementScrollMarginTop(selector) {
   return 0;
 }
 const configRouterOptions = {
-  hashMode: true,
+  hashMode: false,
   scrollBehaviorType: "auto"
 };
 const routerOptions = {
@@ -49616,11 +49616,7 @@ const _sfc_main$2 = /* @__PURE__ */ vueExports.defineComponent({
         {
           rel: "icon",
           type: "image/png",
-          href: "/favicon.ico"
-        },
-        {
-          rel: "canonical",
-          href: "https://www.atlasyigitaydin.com"
+          href: "/favicon.png"
         }
       ]
     });
