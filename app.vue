@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt'
-import { useHead } from '#imports'
-
 useHead({
   title: 'Atlas Yiğit Aydın',
   link: [
