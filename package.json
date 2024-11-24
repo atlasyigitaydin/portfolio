@@ -13,6 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "firebase": "^11.0.2",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
