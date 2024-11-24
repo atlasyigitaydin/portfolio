@@ -1,18 +1,6 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
-    baseURL: '/'
-  },
-
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@vueuse/nuxt',
-    '@nuxtjs/device'
-  ],
-
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config'
-  }
-
+  compatibilityDate: '2024-11-01',
+  devtools: { enabled: true },
+  modules: ['@nuxtjs/tailwindcss'],
 })
